@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Draft Web Resume</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: #e7dfd8;
+      color: #202020;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 32px;
+      border-bottom: 1px solid #ddd;
+      background-color: #b0a092;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 860px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #777;
+    }
+
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 0;
+    }
+
+    .section h2 {
+      margin-bottom: 16px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    #education {
+      background-color: #f6ede6;
+    }
+
+    .resume-section {
+      padding: 25px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .resume-section h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .resume-section p {
+      margin: 0;
+    }
+
+    .resume-section ul {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+
+    .resume-section ul li {
+      margin-bottom: 5px;
+    }
+
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 32px;
+    }
+
+    #about-text {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+
+    #about-text h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    #about-text p {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+
+    #about-text .subtitle {
+      color: #655a4e;
+      font-size: 15px;
+      text-align: justify;
+      margin-bottom: 50px;
+    }
+
+    #about img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    #contact {
+      background-color: #c8c8c8;
+    }
+
+    #contact h2 {
+      margin-top: 0;
+    }
+
+    .contact-section > div {
+      margin-bottom: 7px;
+      display: flex;
+      gap: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 15px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 10px;
+      }
+
+      .section {
+        padding: 25px 15px;
+      }
+
+      nav {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 16px;
+      }
+
+      #about {
+        flex-direction: column;
+      }
+
+      #about-text h1 {
+        font-size: 36px;
+      }
+
+      #about img {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <div id="about-text">
+      <h1>Martyna Skórska</h1>
+      <p class="subtitle">
+        Adaptive and detail-oriented with a background in documentation, data management, event coordination, and
+        teaching.
+      </p>
+      <p>
+        <i>I’m currently exploring the IT field, eager to combine my communication and organizational skills with a growing
+          passion for data analysis and agile methods. In other news, I’m the proud parent of Tuja, a sweet rescue pup
+          I’m completely bonkers about!</i>
+      </p>
+    </div>
+    <img src="images/me.jpg" alt="about_photo" />
+  </section>
+
+  <section id="education">
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="resume-section">
+        <h3>MA in English Philology</h3>
+        <p><strong><i>University of Gdańsk</i>, Poland</strong> | 2023 – Present</p>
+        <p>
+          Master’s in English Philology (in progress), focusing on Natural Language Processing.
+          <br /> My thesis focuses on a corpus-based discourse analysis that examines the evolving interplay between
+          nature and&nbsp;culture.
+        </p>
+      </div>
+      <div class="resume-section">
+        <h3>Erasmus+ Exchange Student</h3>
+        <p><strong><i>University of Hamburg</i>, Germany </strong> | 2018 </p>
+        <p>
+          Erasmus+ Exchange: Completed the intermediate to advanced courses in Pragmatics, Text Production, and
+          Business English.
+        </p>
+      </div>
+      <div class="resume-section">
+        <h3>BA in American Studies</h3>
+        <p><strong><i>University of Warsaw</i>, Poland </strong> | 2011 – 2016 </p>
+        <p>
+          B.A. in American Studies, specializing in U.S. culture.<br /> Researching posthumanism and popular culture
+          for my thesis sparked a lasting interest in nature-culture interfaces.
+        </p>
+      </div>
+  </section>
+
+  <section id="experience">
+    <div class="section">
+      <h2>Experience</h2>
+   
+      <div class="resume-section">
+        <h3>Technical Writer Intern</h3>
+        <p><strong><i>Grid Dynamics Holdings, Inc.</i>, Wrocław, Poland</strong> | 2022 - 2023</p>
+        <ul>
+          <li>Co-created and improved internal process documentation</li>
+          <li>Gained hands-on experience with version control, documentation standards, and QA</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Branch Manager</h3>
+        <p><strong><i>WiMBP: American Corner</i>, Gdańsk, Poland</strong> | 2021 - 2022</p>
+        <ul>
+          <li>Oversaw daily operations in collaboration with the U.S. Embassy and the Voivodeship Public Library’s in Gdańsk</li>
+          <li>Supervised and collaborated with one staff member, delegating tasks and supporting daily operations</li>
+          <li>Planned and hosted 36 virtual events in FY2021, reaching over 1,500 attendees</li>
+          <li>Introduced Trello-based Kanban systems and managed social media content</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Librarian</h3>
+        <p><strong><i>WiMBP: Manhattan Library</i>, Gdańsk, Poland</strong> | 2019 - 2020</p>
+        <ul>
+          <li>Cataloged and maintained library resources</li>
+          <li>Helped develop VR and 3D printing class scenarios</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>English Instructor/Activity Leader</h3>
+        <p><strong><i>Ambit</i>, Gdynia, Poland & <i>PLUS</i>, Chester, UK</strong> | 2018</p>
+        <ul>
+          <li>Ambit: Taught English to diverse age groups and scored top marks in lesson observations</li>
+          <li>PLUS (Professional Linguistic Upper Studies): Led daily activities and trips for an international
+            language-camp program in the UK</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Junior Master Data Specialist</h3>
+        <p><strong><i>Accenture Operations</i>, Warsaw, Poland</strong> | 2016 - 2017</p>
+        <ul>
+          <li>Provided data management support for a British client in a 10-person team</li>
+          <li>Co-created English process manuals during a project transition to India</li>
+          <li>Learned CRM/Salesforce basics and invoice validation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="contact-section">
+        <div><img src="icons/email_icon.svg" alt="Email" width="20" /> my.email@gmail.com</div>
+        <div><img src="icons/phone_call_icon.svg" alt="Phone" width="20" /> +48 111 111 111</div>
+        <div><img src="icons/github_icon.svg" alt="Github" width="20" /> 
+          <a href="https://github.com/ina-ina-mar">ina-ina-mar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Martyna Skórska - All Rights Reserved
+  </footer>
+</body>
+</html>
